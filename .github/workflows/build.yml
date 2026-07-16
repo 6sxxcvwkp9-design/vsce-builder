@@ -5,15 +5,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4  # Updated to v4
+
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4 # Updated to v4
         with:
           node-version: '20'
+
       - name: Install VSCE
         run: npm install @vscode/vsce@3.5.1-0
+
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4 # UPDATED FROM v3 TO v4
         with:
           name: vsce-full
           path: node_modules/@vscode/vsce
