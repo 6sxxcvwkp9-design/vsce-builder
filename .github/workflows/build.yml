@@ -10,7 +10,7 @@ jobs:
       - name: Setup Node.js (Using Supported LTS)
         uses: actions/setup-node@v4
         with:
-          node-version: '22'  # <--- UPDATED FROM 20 TO 22 (Safe & Supported)
+          node-version: '22'  
 
       - name: Install VSCE and ALL Dependencies
         run: npm install @vscode/vsce@3.5.1-0
