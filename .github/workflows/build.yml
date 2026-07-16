@@ -7,10 +7,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node.js (Using Supported LTS)
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'  # <--- UPDATED FROM 20 TO 22 (Safe & Supported)
 
       - name: Install VSCE and ALL Dependencies
         run: npm install @vscode/vsce@3.5.1-0
