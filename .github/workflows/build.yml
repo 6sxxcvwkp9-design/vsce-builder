@@ -21,4 +21,3 @@ jobs:
           name: vsce-complete-offline-bundle
           path: node_modules
           retention-days: 5
-          include-hidden-files: false
